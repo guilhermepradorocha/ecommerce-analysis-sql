@@ -16,7 +16,7 @@ for file_name in file_list:
         df.to_sql(
             table_name, 
             engine, 
-            if_exists='replace', # Corrigido de 'if_exist'
+            if_exists='replace',
             index=False
         )
 print("Finished!")
